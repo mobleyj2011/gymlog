@@ -303,7 +303,7 @@ user-select: none; -webkit-user-select: none; line-height: 1; flex-shrink: 0;
 }
 
 .weight-btn:active {
-background: linear-gradient(135deg,#ff6b00,#ff3e6c);
+background: linear-gradient(135deg, #ff6b00, #ff3e6c);
 color: #fff; border-color: var(–accent); transform: scale(0.92);
 }
 
@@ -397,8 +397,7 @@ transition: all 0.2s;
 /* ── Modal ── */
 .modal-overlay {
 position: fixed; inset: 0;
-background: rgba(0,0,0,0.5);
-backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+background: rgba(0,0,0,0.6);
 z-index: 300; display: none; align-items: flex-end; justify-content: center;
 }
 
@@ -407,13 +406,14 @@ z-index: 300; display: none; align-items: flex-end; justify-content: center;
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 .modal {
-background: var(–surface);
+background: #ffffff;
 border-radius: 24px 24px 0 0;
 padding: 24px 20px 44px; width: 100%; max-width: 430px;
-border-top: 1px solid var(–border);
-box-shadow: 0 -8px 40px rgba(0,0,0,0.12);
+border-top: 2px solid var(–border);
+box-shadow: 0 -12px 48px rgba(0,0,0,0.2);
 animation: slideUp 0.3s cubic-bezier(0.34,1.56,0.64,1);
-max-height: 90vh; overflow-y: auto;
+max-height: 92vh; overflow-y: auto;
+position: relative; z-index: 1;
 }
 
 @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
@@ -424,7 +424,7 @@ border-radius: 2px; margin: 0 auto 20px;
 }
 
 .modal-title {
-font-size: 20px; font-weight: 800; color: var(–text); margin-bottom: 16px;
+font-size: 20px; font-weight: 800; color: #0f0f14; margin-bottom: 16px;
 }
 
 .form-group { margin-bottom: 12px; }
@@ -432,13 +432,13 @@ font-size: 20px; font-weight: 800; color: var(–text); margin-bottom: 16px;
 .form-label {
 font-family: ‘DM Mono’, monospace; font-size: 10px;
 letter-spacing: 2px; text-transform: uppercase;
-color: var(–accent); font-weight: 600; display: block; margin-bottom: 6px;
+color: #ff6b00; font-weight: 600; display: block; margin-bottom: 6px;
 }
 
 .form-input {
-width: 100%; background: var(–bg);
-border: 1.5px solid var(–border); border-radius: 10px;
-padding: 12px 14px; color: var(–text);
+width: 100%; background: #f8f8fa;
+border: 1.5px solid #e0e0e8; border-radius: 10px;
+padding: 12px 14px; color: #0f0f14;
 font-family: ‘Outfit’, sans-serif; font-size: 15px;
 outline: none; transition: border-color 0.2s;
 }
@@ -494,7 +494,7 @@ font-weight: 700; cursor: pointer; transition: all 0.15s;
 .toast {
 position: fixed; top: 24px; left: 50%;
 transform: translateX(-50%) translateY(-80px);
-background: linear-gradient(135deg,#ff6b00,#ff3e6c);
+background: linear-gradient(135deg, #ff6b00, #ff3e6c);
 color: #fff; padding: 10px 20px; border-radius: 20px;
 font-size: 13px; font-weight: 700; z-index: 500;
 transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
@@ -550,7 +550,7 @@ margin-bottom: 16px; letter-spacing: 2px;
 
 .login-btn {
 width: 100%; padding: 15px;
-background: linear-gradient(135deg,#ff6b00,#ff3e6c);
+background: linear-gradient(135deg, #ff6b00, #ff3e6c);
 border: none; border-radius: 12px; color: #fff;
 font-family: ‘Outfit’, sans-serif; font-size: 15px;
 font-weight: 700; cursor: pointer; transition: opacity 0.2s;
